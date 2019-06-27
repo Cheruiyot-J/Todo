@@ -12,7 +12,7 @@ if (isset($_GET["id"])){
     $row=mysqli_fetch_assoc($result);
     extract($row);
 }
-if(isset($_POST["task_name,date_todo"])){
+if(isset($_POST["task_name"])){
     $task_name=$_REQUEST["task_name"];
     $date_todo=$_REQUEST["date_todo"];
     $status=$_REQUEST["status"];
